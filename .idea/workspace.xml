@@ -5,60 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbdb8c70-6a69-4b9a-b8a4-cfd0252fcaff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/common/annotation/AuthCheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/common/aspect/AuthCheckAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/common/constant/UserConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/common/domain/vo/req/PageRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/controller/QuestionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/controller/QuestionSubmitController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/domain/dto/QuestionDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/domain/dto/QuestionSubmitDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/domain/dto/TagDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/domain/enums/JudgeInfoMsgEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/domain/enums/UserRoleEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/domain/po/Question.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/domain/po/QuestionSubmit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/domain/po/Tag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/domain/vo/req/question/JudgeCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/domain/vo/req/question/JudgeConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/domain/vo/req/question/QuestionAddReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/domain/vo/req/question/QuestionDeleteReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/domain/vo/req/question/QuestionPageReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/domain/vo/req/question/QuestionUpdateReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/domain/vo/req/question_submit/JudgeInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/domain/vo/req/question_submit/QuestionSubmitPageReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/mapper/QuestionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/mapper/QuestionSubmitMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/mapper/TagMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/service/QuestionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/service/QuestionSubmitService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/service/TagService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/service/impl/QuestionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/service/impl/QuestionSubmitServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/service/impl/TagServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/init.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/MainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/common/domain/vo/resp/ApiResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/common/domain/vo/resp/ApiResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/common/interceptor/TokenInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/common/interceptor/TokenInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/common/utils/RequestHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/common/utils/RequestHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/oss/controller/OssController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/oss/controller/OssController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/oss/service/impl/OssServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/oss/service/impl/OssServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/user/domain/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/domain/dto/UserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/user/domain/enums/UserGenderEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/domain/enums/UserGenderEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/user/domain/po/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/domain/po/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/user/domain/vo/req/UserLoginReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/domain/vo/req/user/UserLoginReq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/user/domain/vo/req/UserRegisterReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/domain/vo/req/user/UserRegisterReq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/user/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zuu/springbootinit/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/QuestionSubmitMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/QuestionSubmitMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +143,7 @@
       <updated>1729138928458</updated>
       <workItem from="1729138929797" duration="16045000" />
       <workItem from="1729164072242" duration="41732000" />
-      <workItem from="1729400316416" duration="169000" />
+      <workItem from="1729400316416" duration="436000" />
     </task>
     <task id="LOCAL-00001" summary="第一版 ，有全局异常封装、结果返回、用户注册登录逻辑、token拦截器、minio配置等功能">
       <option name="closed" value="true" />
@@ -206,15 +153,55 @@
       <option name="project" value="LOCAL" />
       <updated>1729163887879</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="添加题目CRUD代码">
+      <option name="closed" value="true" />
+      <created>1729400601706</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729400601706</updated>
+    </task>
+    <task id="LOCAL-00003" summary="添加题目CRUD代码">
+      <option name="closed" value="true" />
+      <created>1729400655647</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729400655647</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="第一版 ，有全局异常封装、结果返回、用户注册登录逻辑、token拦截器、minio配置等功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="第一版 ，有全局异常封装、结果返回、用户注册登录逻辑、token拦截器、minio配置等功能" />
+    <MESSAGE value="添加题目CRUD代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加题目CRUD代码" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
