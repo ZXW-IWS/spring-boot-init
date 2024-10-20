@@ -1,11 +1,13 @@
 server:
   port: 9191
+  servlet:
+    context-path: /api
 spring:
   profiles:
     #运行的环境
     active: dev
   application:
-    name: spring-boot-init
+    name: SpringBootInit
 #  todo:在dev和prod配置文件中写清mysql配置
   datasource:
     url: jdbc:mysql://${mysql.ip}:${mysql.port}/${mysql.dbname}?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai

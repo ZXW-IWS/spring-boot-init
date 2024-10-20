@@ -10,7 +10,6 @@ import com.zuu.springbootinit.oss.domain.vo.resp.OssResp;
 import com.zuu.springbootinit.oss.service.OssService;
 import com.zuu.springbootinit.oss.template.MinIOTemplate;
 import jakarta.annotation.Resource;
-import org.springframework.stereotype.Service;
 
 import java.util.Objects;
 

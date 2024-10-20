@@ -4,7 +4,7 @@ mysql:
   password: root
   ip: localhost
   port: 3306
-  dbname: studb
+  dbname: zoj
 ##########redis配置##################
 redis:
   host: localhost

@@ -7,11 +7,8 @@ import com.zuu.springbootinit.oss.domain.vo.req.UploadUrlReq;
 import com.zuu.springbootinit.oss.domain.vo.resp.OssResp;
 import com.zuu.springbootinit.oss.service.OssService;
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.annotation.Resource;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
 
@@ -32,6 +29,6 @@ public class OssController {
     @GetMapping("/upload/url")
     @Operation(summary = "获取临时上传链接")
     public BaseResponse<OssResp> getUploadUrl(@Valid UploadUrlReq req) {
-        return ApiResult.success(ossService.getUploadUrl(RequestHolder.get().getUid(), req));
+        return ApiResult.success(ossService.getUploadUrl(RequestHolder.get(), req));
     }
 }

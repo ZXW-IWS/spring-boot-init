@@ -8,6 +8,13 @@ import com.zuu.springbootinit.common.domain.enums.ErrorEnum;
  * @Date 2024/10/17 13:09
  */
 public class ApiResult {
+
+    /**
+     * 返回成功信息
+     */
+    public static  BaseResponse<Void> success(){
+        return new BaseResponse<Void>(0,null,"ok");
+    }
     /**
      * 返回成功信息
      */

@@ -2,16 +2,15 @@ package com.zuu.springbootinit.common.interceptor;
 
 import com.zuu.springbootinit.common.domain.enums.ErrorEnum;
 import com.zuu.springbootinit.common.exeption.BusinessException;
-import com.zuu.springbootinit.user.service.UserService;
+import com.zuu.springbootinit.common.utils.RequestHolder;
+import com.zuu.springbootinit.service.UserService;
 import jakarta.annotation.Resource;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 
-import java.util.Collections;
 import java.util.Objects;
-import java.util.Set;
 
 /**
  * @Author zuu
@@ -26,6 +25,7 @@ public class TokenInterceptor implements HandlerInterceptor {
 
     @Resource
     private UserService userService;
+
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         //拦截器取到请求先进行判断，如果是OPTIONS请求，则放行
@@ -33,22 +33,22 @@ public class TokenInterceptor implements HandlerInterceptor {
             return true;
         }
 
+        boolean isPublicUri = isPublicUri(request);
         String token = getToken(request);
+        if (isPublicUri) {
+            return true;
+        }
         if (Objects.nonNull(token)) {
-            Long id = userService.getIdByToken(token);
-            if(Objects.isNull(id)){
+            Long uid = userService.getIdByToken(token);
+            if (Objects.isNull(uid)) {
                 //返回未登录
                 throw new BusinessException(ErrorEnum.NO_LOGIN);
             }
             //用户已登录
-            request.setAttribute(ID_KEY, id);
+            RequestHolder.set(uid);
         } else {
-            //是否是公共接口
-            boolean isPublicUri = isPublicUri(request);
-            if (!isPublicUri) {
-                //返回未登录
-                throw new BusinessException(ErrorEnum.NO_LOGIN);
-            }
+            //返回未登录
+            throw new BusinessException(ErrorEnum.NO_LOGIN);
         }
 
         return true;
@@ -60,7 +60,7 @@ public class TokenInterceptor implements HandlerInterceptor {
         String requestURI = request.getRequestURI();
         String[] split = requestURI.split("/");
         //uri的开头有一个"/"，因此split数组的0位置上有一个空字符串
-        return split.length > 2 && "public".equals(split[2]);
+        return split.length > 3 && "public".equals(split[3]);
     }
 
     private String getToken(HttpServletRequest request) {
